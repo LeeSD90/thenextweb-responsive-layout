@@ -3,11 +3,31 @@
 }
 
 body {
-    background: rgb(240, 240, 240);
+    background: rgb(249, 249, 249);
     color: #555;
     line-height: 1.5;
     font-size: 14px;
+    margin: 0;
     font-family: 'ARS Maquette','Helvetica Neue',Arial,sans-serif;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 1.6em;
+    left: 1.6em;
+}
+
+.image-text .byline {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,.6);
+}
+
+.image-text .category {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: .04em;
+    font-size: 1.2rem;
 }
 
 /* Header */
@@ -92,9 +112,23 @@ header .main {
 }
 
 #featured article {
+    position: relative;
+    overflow: hidden;
     height: 50%;
     width: 33.33%;
+    padding: 0.6em;
     float: right;
+    background-image: url(http://via.placeholder.com/1000x600);
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+}
+
+#featured article h1 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
 }
 
 /* Latest section */
@@ -103,6 +137,17 @@ header .main {
     clear: both;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+#latest h1 {
+    color: #f42;
+    font-size: 1.5rem;
+}
+
+#latest .articles h1 {
+    color: rgb(51, 51, 51);
+    font-weight: 900;
+    font-size: 0.9rem;
 }
 
 #latest .articles {
@@ -117,20 +162,75 @@ header .main {
     padding: 12px;
 }
 
+#latest img {
+    max-height: 135px;
+    max-width: 270px;
+}
+
+#latest .byline {
+    color: #aaa;
+}
+
 /* Others section */
 
 #others {
     max-width: 1100px;
     margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     flex-flow: row wrap;
     flex: 0 1 auto;
 }
 
-#others article {
+#others h1 {
+    color: #f42;
+    font-size: 1.5rem;
+}
+
+#others section {
     max-width: 33.33%;
     flex-basis: 33.33%;
     padding: 12px;
+}
+
+#others article {
+    min-width: 270px;
+    min-height: 176px;
+    position: relative;
+    background-image: url("http://via.placeholder.com/800x800");
+    background-position: center;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+#others article h1 {
+    font-size: 0.9rem;
+    color: white;
+    margin: 0;
+    max-width: 80%;
+}
+
+#others ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#others li {
+    color: rgb(110, 110, 110);
+}
+
+#others li::before{
+    content: "•";
+    color: red;
+    margin-right: 5px;
+}
+#others li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgba(170, 170, 170, 0.568);
+    margin: 10px 0;
 }
 
 /* Footer */
