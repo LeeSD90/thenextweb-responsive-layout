@@ -27,6 +27,9 @@ header #logo {
     height: 100%;
     width: 115px;
     display: flex;
+    font-weight: 900;
+    font-size: 24px;
+    font-style: italic;
     justify-content: center;
     align-items: center;
     color: white;
@@ -40,27 +43,37 @@ header nav {
 }
 
 header ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
     list-style-type: none;
+    padding: 15px;
+    text-align: center;
 }
 
 header li {
     display: inline;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    word-spacing: 0.1vh;
+    letter-spacing: 0.1vh;
+}
+
+header .social, .search, .mobile-menu {
+    float: right;
+    border-left: 1px solid rgba(170, 170, 170, 0.568);
+}
+
+header a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
 }
 
 header .main {
     float: left;
-}
-
-header .search {
-    float: right;
-}
-
-header .social {
-    float: right;
-}
-
-header .mobile-menu {
-    float: right;
 }
 
 /* Container */
