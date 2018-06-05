@@ -59,6 +59,10 @@ header .social {
     float: right;
 }
 
+header .mobile-menu {
+    float: right;
+}
+
 /* Container */
 
 #container {
@@ -132,4 +136,24 @@ footer {
     text-align: center;
     color: #aaa;
     background: #131313;
+}
+
+/* Media screens */
+
+@media screen and (min-width: 768px) {
+    header .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header .main, .social {
+        display: none;
+    }
+
+    header .mobile-menu {
+        display: block;
+    }
+
 }
