@@ -290,6 +290,10 @@ footer .bottom {
 
 @media screen and (max-width: 768px) {
 
+    .image-text .category {
+        font-size: 1rem;
+    }
+
     header .main, .social {
         display: none;
     }
@@ -298,11 +302,28 @@ footer .bottom {
         display: block;
     }
 
+    footer {
+        height: 300px;
+    }
+
+    footer .top {
+        line-height: 210px;
+    }
+
+    footer .bottom {
+        font-size: 0.6rem;
+        line-height: 80px;
+    }
+
     #featured article {
         display: block;
         float: left !important;
         width: 100% !important;
         min-height: 30vh;
+    }
+
+    #featured article h1 {
+        font-size: 1.1rem;
     }
 
     #latest article {
